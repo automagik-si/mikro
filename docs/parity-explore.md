@@ -26,12 +26,12 @@ native answer trace, a repo-verified required-facts checklist, and the rubric.
 
 | Task | Root | Required facts | Pass needs | Native premium tokens |
 |------|------|----------------|-----------|----------------------|
-| [1](../.genie/wishes/rlmx-explore-offload/tasks/1.md) | `/home/namastex/prod/brain` | 14 | 13 | 2,943,691 |
-| [2](../.genie/wishes/rlmx-explore-offload/tasks/2.md) | `/home/namastex/workspace/repos/genie` | 10 | 9 | 3,098,197 |
-| [3](../.genie/wishes/rlmx-explore-offload/tasks/3.md) | `/home/namastex/prod/brain` | 11 | 10 | 2,976,188 |
-| [4](../.genie/wishes/rlmx-explore-offload/tasks/4.md) | `/home/namastex/prod/brain` | 12 | 11 | 2,186,864 |
-| [5](../.genie/wishes/rlmx-explore-offload/tasks/5.md) | `/home/namastex/workspace/repos/genie` | 5 | 5 | 1,499,747 |
-| [6](../.genie/wishes/rlmx-explore-offload/tasks/6.md) | `/home/namastex/workspace/repos/genie` | 8 | 8 | 3,319,167 |
+| [1](../.genie/wishes/rlmx-explore-offload/tasks/1.md) | `<home>/prod/brain` | 14 | 13 | 2,943,691 |
+| [2](../.genie/wishes/rlmx-explore-offload/tasks/2.md) | `<home>/workspace/repos/genie` | 10 | 9 | 3,098,197 |
+| [3](../.genie/wishes/rlmx-explore-offload/tasks/3.md) | `<home>/prod/brain` | 11 | 10 | 2,976,188 |
+| [4](../.genie/wishes/rlmx-explore-offload/tasks/4.md) | `<home>/prod/brain` | 12 | 11 | 2,186,864 |
+| [5](../.genie/wishes/rlmx-explore-offload/tasks/5.md) | `<home>/workspace/repos/genie` | 5 | 5 | 1,499,747 |
+| [6](../.genie/wishes/rlmx-explore-offload/tasks/6.md) | `<home>/workspace/repos/genie` | 8 | 8 | 3,319,167 |
 
 **Gate arithmetic.** The wish sets pass at ≥4 of 5, and ≥80% for larger suites
 (WISH.md:70-71, restated as acceptance criterion A4b at WISH.md:137-138).
@@ -61,7 +61,7 @@ is resolvable against the very tree the agent read.
 **Two exposures in this arm, disclosed rather than corrected for:**
 
 - **The task roots are live checkouts and they moved during the gate window.**
-  `/home/namastex/prod/brain/src/lib/server.ts` was last written at 19:28 on the
+  `<home>/prod/brain/src/lib/server.ts` was last written at 19:28 on the
   run day; the rounds span roughly 20:00–23:55. Citations from an early round
   were therefore resolved against a tree that may not be byte-identical to the
   one that round's model read. `parity/verify-native.mjs` covers drift in the
@@ -772,7 +772,7 @@ longer existed (§11).
 | Concurrency | 1 — each task ran to completion before the next started, in order 1..6 |
 | Env | `MIKRO_REPL_TIMEOUT_MS=600000`, `MIKRO_MCP_RUN_TIMEOUT_MS=900000`, `PARITY_CALL_TIMEOUT_MS=600000`, `PARITY_MAX_TOTAL_TIMEOUT_MS=2400000` — all four recorded in every run record |
 | mikro HEAD | `6ec4822` |
-| Task-root HEADs | `/home/namastex/prod/brain` `040bb83`; `/home/namastex/workspace/repos/genie` `71dd019` |
+| Task-root HEADs | `<home>/prod/brain` `040bb83`; `<home>/workspace/repos/genie` `71dd019` |
 | Window | 2026-07-27 13:35:02Z → 14:16:22Z, 41 min, **$0.22** of khal spend |
 | Runner | [`parity/runs/r2-shot-gen1-flash/shot.sh`](../.genie/wishes/rlmx-explore-offload/parity/runs/r2-shot-gen1-flash/shot.sh) — a serial specialization of `run-round.sh`; the frozen gate's own runner was not edited |
 
