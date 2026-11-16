@@ -25,7 +25,7 @@ relative `context` arguments and the REPL cwd all agree on your project root
 no npm path.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/automagik-dev/mikro/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/automagik-si/mikro/main/scripts/install.sh | bash
 ```
 
 It clones to `~/.mikro/mikro`, builds, and links `~/.local/bin/mikro`. If you
