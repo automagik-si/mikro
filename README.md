@@ -10,7 +10,7 @@ Based on the [RLM paper](https://arxiv.org/abs/2501.12599) (REPL-based LLM Metho
 npm-installed (see [`docs/release-contract.md`](docs/release-contract.md)):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/automagik-dev/mikro/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/automagik-si/mikro/main/scripts/install.sh | bash
 ```
 
 It clones to `~/.mikro/mikro`, runs `npm ci --include=dev` and `npm run build`,
@@ -48,7 +48,7 @@ the same checkout; consume it as a git dependency (`dist/` is committed, so no
 build step is needed on the consumer side):
 
 ```bash
-npm install github:automagik-dev/mikro   # package name: mikro
+npm install github:automagik-si/mikro   # package name: mikro
 ```
 
 This consumer install uses the consumer project’s npm manifest and lock; it is
