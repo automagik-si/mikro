@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MIKRO_REPO_URL="${MIKRO_REPO_URL:-https://github.com/automagik-dev/mikro.git}"
+MIKRO_REPO_URL="${MIKRO_REPO_URL:-https://github.com/automagik-si/mikro.git}"
 # Pre-rename location of the repository. Used only when MIKRO_REPO_URL does not
 # resolve, so installs keep working until the GitHub rename lands.
 MIKRO_FALLBACK_REPO_URL="${MIKRO_FALLBACK_REPO_URL:-https://github.com/automagik-dev/rlmx.git}"
